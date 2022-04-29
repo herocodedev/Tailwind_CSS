@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEROCODEDEV</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div id="root" class="w-full">
+      <div class="content-wrapper max-w-screen-2xl font-Montserrat text-sm">
+        <header class="fixed top-0 left-0 right-0 bg-white z-10">
+          <div
+            class="header p-4 border-b-[1px] border-b-gray-300 flex items-center justify-between relative"
+          >
+            <div class="logo">
+              <span class="font-bold text-xl">SHOPPING</span>
+            </div>
+            <div class="menu flex gap-3">
+              <ul
+                class="hidden menu-list w-full lg:flex lg:flex-row items-center gap-6 text-xs font-semibold"
+              >
+                <li class="menu-item">
+                  <a href="" class="">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="">Our Products</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class="">About</a>
+                </li>
+                <li class="menu-item">
+                  <a href="" class=""> Contact </a>
+                </li>
+                <li class="menu-item uppercase">
+                  <a href="" class="">Blog</a>
+                </li>
+                <li class="menu-item uppercase">
+                  <a href="" class="">Styleguilde</a>
+                </li>
+                <li class="menu-item uppercase">
+                  <a href="" class="">license</a>
+                </li>
+              </ul>
+              <div class="uppercase cursor-pointer flex items-center">
+                <div class="inline-block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                    />
+                  </svg>
+                </div>
+                <span class="text-[15px] lg:text-[12px] font-semibold">0</span>
+              </div>
+              <div class="icon block font-semibold cursor-pointer lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="mt-[61px]">
+          <!-- Start Slider -->
+          <div class="slider flex flex-col md:flex-row px-4">
+            <div
+              class="basis-1/2 slider-left flex flex-col justify-between items-center"
+            >
+              <div
+                class="basis-1/2 slider-left-content text-center md:text-left flex justify-center flex-col pl-0 md:pl-8 lg:px-16"
+              >
+                <h3
+                  class="text-3xl lg:text-4xl leading-snug tracking-wide text-black font-semibold"
+                >
+                  On the wave of the great fashion
+                </h3>
+                <span class="text-gray-400 leading-6 py-6"
+                  >Combining classic collections along with limited editions and
+                  hand printed signature designs. All of our items are super
+                  comfy and cool at the same time.</span
+                >
+              </div>
+              <div
+                class="basis-1/2 slider-left-img h-full flex justify-end flex-col"
+              >
+                <div
+                  class="flex gap-6 bg-[#18181d] hover:bg-black p-8 transition-all ease-in-out duration-500 cursor-pointer"
+                >
+                  <img
+                    src="./img/img-slider1.png"
+                    class="w-[40%] rounded-lg object-cover"
+                    alt=""
+                  />
+                  <div class="flex justify-center flex-col gap-4">
+                    <h5 class="text-white text-xl">Meet the Bay Area</h5>
+                    <span class="text-gray-400 leading-7"
+                      >Grab a tee and surf into the sunset our summer collection
+                      has never been so full of sunshine we love colored design
+                      and vibrant prints.
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="py-8 bg-[#344e41] text-white flex justify-between px-4 h-[80px] group cursor-pointer"
+                >
+                  <span class="md:text-xl">Discover Products</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 -translate-x-4 group-hover:translate-x-0 transition-all ease-in-out duration-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="basis-1/2 slider-right relative">
+              <img
+                src="./img/img-slider2.png"
+                class="h-full object-cover"
+                alt=""
+              />
+              <button
+                class="absolute bg-white bottom-0 text-black w-full flex justify-between px-4 h-[80px] py-8"
+              >
+                <span class="md:text-xl text-gray-600"
+                  >Build Bridges Not Walls Backpack</span
+                >
+                <span class="text-black text-[18px]">$ 50.00 USD</span>
+              </button>
+            </div>
+          </div>
+          <!-- End Slider -->
+
+          <!-- Start Products -->
+          <div
+            class="shopping-products grid-cols-1 grid md:grid-cols-2 px-4 mt-24 md:gap-8"
+          >
+            <div class="product relative mb-6 md:mb-0 rounded overflow-hidden">
+              <img
+                class="h-[500px] object-cover"
+                src="./img/product-1.jpg"
+                alt=""
+              />
+              <div
+                class="product-description absolute bg-white left-1/2 -translate-x-[50%] bottom-4 w-[80%] rounded-lg px-4 py-6"
+              >
+                <h3 class="text-xl md:text-3xl mb-4">Accesories</h3>
+                <div class="flex justify-between items-center group">
+                  <span class="text-gray-600 font-semibold cursor-pointer"
+                    >Explore All Products</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 -translate-x-4 group-hover:translate-x-0 transition-all ease-in-out duration-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="product relative mb-6 md:mb-0 rounded overflow-hidden">
+              <img
+                class="h-[500px] object-cover"
+                src="./img/product-2.jpg"
+                alt=""
+              />
+              <div
+                class="product-description absolute bg-white left-1/2 -translate-x-[50%] bottom-4 w-[80%] rounded-lg px-4 py-6"
+              >
+                <h3 class="text-xl md:text-3xl mb-4">Accesories</h3>
+                <div class="flex justify-between items-center group">
+                  <span class="text-gray-600 font-semibold cursor-pointer"
+                    >Explore All Products</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 -translate-x-4 group-hover:translate-x-0 transition-all ease-in-out duration-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="product relative mb-6 md:mb-0 rounded overflow-hidden">
+              <img
+                class="h-[500px] object-cover"
+                src="./img/product-3.jpg"
+                alt=""
+              />
+              <div
+                class="product-description absolute bg-white left-1/2 -translate-x-[50%] bottom-4 w-[80%] rounded-lg px-4 py-6"
+              >
+                <h3 class="text-xl md:text-3xl mb-4">Accesories</h3>
+                <div class="flex justify-between items-center group">
+                  <span class="text-gray-600 font-semibold cursor-pointer"
+                    >Explore All Products</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 -translate-x-4 group-hover:translate-x-0 transition-all ease-in-out duration-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="product relative mb-6 md:mb-0 rounded overflow-hidden">
+              <img
+                class="h-[500px] object-cover"
+                src="./img/product-4.jpg"
+                alt=""
+              />
+              <div
+                class="product-description absolute bg-white left-1/2 -translate-x-[50%] bottom-4 w-[80%] rounded-lg px-4 py-6"
+              >
+                <h3 class="text-xl md:text-3xl mb-4">Accesories</h3>
+                <div class="flex justify-between items-center group">
+                  <span class="text-gray-600 font-semibold cursor-pointer"
+                    >Explore All Products</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 -translate-x-4 group-hover:translate-x-0 transition-all ease-in-out duration-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Products -->
+          <!-- Start Shop Clothing -->
+          <div class="shopping-clothes mt-16">
+            <p class="uppercase mb-4 text-center text-gray-600 font-semibold">
+              shop clothing
+            </p>
+            <h2 class="text-center text-3xl text-black font-semibold">
+              Explore our latest pieces
+            </h2>
+            <div class="mt-8 px-4">
+              <div
+                class="products grid grid-cols-1 mb-4 md:mb-0 md:grid-cols-2 lg:grid-cols-4 gap-4"
+              >
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-1.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                      <div class="absolute p-4 bg-gray-900 text-white">
+                        FEATURED
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-2.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-3.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                      <div class="absolute p-4 bg-red-500 text-white">
+                        FEATURED
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-4.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-5.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                      <div class="absolute p-4 bg-red-500 text-white">
+                        FEATURED
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-6.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-7.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-8.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                      <div class="absolute p-4 bg-gray-900 text-white">
+                        FEATURED
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-9.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-10.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-11.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+
+                <div
+                  class="product-item cursor-pointer rounded-lg overflow-hidden"
+                >
+                  <div
+                    class="group h-[360px] bg-[url('./img/clothes-12.jpg')] bg-center bg-cover"
+                  >
+                    <div
+                      class="relative hover:bg-gray-900 hover:bg-opacity-10 w-full h-full"
+                    >
+                      <div
+                        class="hidden group-hover:block group-hover:animate-fadeIn absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg"
+                      >
+                        VIEW PRODUCT
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-desc">
+                    <span
+                      class="mt-4 block text-gray-900 leading-7 font-medium text-[17px]"
+                      >Grey & Blue Build Bridges Not Walls Tee</span
+                    >
+                    <h2 class="mt-3 text-black text-2xl">$ 29.50 USD</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-16 md:mt-12 flex justify-center items-center">
+              <div
+                class="py-4 px-6 rounded-md bg-black text-white flex justify-between items-center group cursor-pointer"
+              >
+                <p class="mr-8 font-semibold">VIEW ALL PRODUCTS</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 -translate-x-4 group-hover:translate-x-0 transition-all ease-in-out duration-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- End Shop Clothing -->
+          <!-- Start Parallax -->
+          <div
+            class="ct-parallax mt-16 h-[350px] bg-fixed bg-[url('./img/product-1.jpg')] right-0 left-0 bg-center bg-cover"
+          ></div>
+          <!-- End Parallax -->
+          <!-- Start product made -->
+          <div class="shopping-model mt-16 px-4 sm:mb-0 h-fit md:h-[600px]">
+            <div
+              class="product-made relative h-full w-full mb-8 md:mb-0 md:grid grid-cols-1 grid-rows-2 lg:grid-cols-3 lg:grid-rows-3"
+            >
+              <img
+                src="./img/model-product-made.jpg"
+                alt=""
+                class="lg:row-span-3 lg:col-start-1 lg:row-start-1 lg:row-end-3 lg:col-span-2 object-cover h-full w-full"
+              />
+              <div
+                class="shadow-gray-700 h-fit w-[100%] lg:w-[80%] lg:col-start-2 lg:col-span-2 lg:row-start-2 lg:row-end-4 shadow-md rounded-md p-4 md:p-8 lg:p-16 bg-white"
+              >
+                <h1 class="font-medium text-3xl mb-8">Meet the Bay Area</h1>
+                <p class="leading-8 text-gray-400">
+                  Born in the Outer Sunset, San Franpsycho originally began as a
+                  surfing film documenting the local Ocean Beach surf scene in
+                  2001. After the film, fans identified with the name and
+                  demanded we make clothing. So we learned the art of
+                  screen-printing, creating various garments in a dark basement
+                  by night, and selling out of of an orange and black
+                  zebra-striped van named Big Chaos by day.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- End product made -->
+          <!-- Start shopping activities -->
+
+          <div class="shopping-activities px-4">
+            <p class="uppercase text-gray-500 font-medium mt-4 text-sm">
+              OUR ARTICLES
+            </p>
+            <h1 class="my-4 font-medium tracking-wide text-4xl leading-tight">
+              Welcome to the surf club. Discover <br />
+              the best way to express yourself.
+            </h1>
+            <div class="cards grid grid-cols-4 gap-4">
+              <div
+                class="card col-span-4 md:col-span-1 rounded overflow-hidden"
+              >
+                <div
+                  class="bg-[url('./img/activity-1.jpg')] h-[400px] w-full bg-center bg-cover"
+                >
+                  <div class="bg-black bg-opacity-30 w-full h-full relative">
+                    <div
+                      class="absolute px-4 left-[10%] top-[5%] py-2 bg-transparent border-[1px] text-white font-medium"
+                    >
+                      News
+                    </div>
+                    <div
+                      class="absolute top-[20%] left-[10%] px-2 w-full md:w-[200px] text-3xl leading-snug text-white font-thin"
+                    >
+                      <p>
+                        How to choose the right surfboard for any time of the
+                        day.
+                      </p>
+                    </div>
+                    <div
+                      class="absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg cursor-pointer transition-all ease-in-out duration-500 hover:bg-black hover:text-white"
+                    >
+                      VIEW PRODUCT
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card col-span-4 md:col-span-1 rounded overflow-hidden"
+              >
+                <div
+                  class="bg-[url('./img/activity-2.jpg')] h-[400px] w-full bg-center bg-cover"
+                >
+                  <div class="bg-black bg-opacity-30 w-full h-full relative">
+                    <div
+                      class="absolute px-4 left-[10%] top-[5%] py-2 bg-transparent border-[1px] text-white font-medium"
+                    >
+                      News
+                    </div>
+                    <div
+                      class="absolute top-[20%] left-[10%] w-full px-2 md:w-[200px] text-3xl leading-snug text-white font-thin"
+                    >
+                      <p>
+                        How to choose the right surfboard for any time of the
+                        day.
+                      </p>
+                    </div>
+                    <div
+                      class="absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg cursor-pointer transition-all ease-in-out duration-500 hover:bg-black hover:text-white"
+                    >
+                      VIEW PRODUCT
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card col-span-4 md:col-span-2 rounded overflow-hidden"
+              >
+                <div
+                  class="bg-[url('./img/activity-3.jpg')] h-[400px] w-full bg-center bg-cover"
+                >
+                  <div class="bg-black bg-opacity-30 w-full h-full relative">
+                    <div
+                      class="absolute px-4 left-[10%] top-[5%] py-2 bg-transparent border-[1px] text-white font-medium"
+                    >
+                      News
+                    </div>
+                    <div
+                      class="absolute top-[20%] px-2 left-[10%] text-3xl leading-snug text-white font-thin"
+                    >
+                      <p>
+                        How to choose the right surfboard for any time of the
+                        day.
+                      </p>
+                    </div>
+                    <div
+                      class="absolute bg-white w-[80%] bottom-2 left-1/2 -translate-x-[50%] py-4 text-center font-semibold rounded-lg cursor-pointer transition-all ease-in-out duration-500 hover:bg-black hover:text-white"
+                    >
+                      VIEW PRODUCT
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End shopping activities -->
+          <!-- Start shopping contact -->
+
+          <div
+            class="shopping-contact mt-8 p-8 border gap-4 flex flex-col lg:flex-row px-8 py-16 items-center justify-between"
+          >
+            <div class="content-left basis-1/2">
+              <h1 class="text-2xl sm:text-3xl font-medium tracking-wider">
+                Stay up to date with our newest collections and special deals!
+              </h1>
+            </div>
+            <div class="form-contact basis-1/2 flex w-full h-full">
+              <input
+                type="text"
+                class="bg-gray-200 placeholder:text-gray-600 py-6 px-4 w-full lg:w-[70%] outline-none"
+                placeholder="Enter your email"
+              />
+              <button class="uppercase bg-black py-6 text-white px-4">
+                SUBSCRIBE
+              </button>
+            </div>
+          </div>
+          <!-- End shopping contact -->
+        </main>
+      </div>
+      <footer class="p-16">
+        <div class="grid grid-cols-4 gap-8">
+          <div class="col-span-4 sm:col-span-2">
+            <h3 class="text-black font-bold text-4xl">SHOPPING</h3>
+          </div>
+          <div class="col-span-2 sm:col-span-1">
+            <ul class="text-gray">
+              <li class="text-black">Homepage</li>
+              <li class="text-gray-400 py-2">Homepage 1</li>
+              <li class="text-gray-400 py-2">Homepage 2</li>
+              <li class="text-gray-400 py-2">Homepage 3</li>
+              <li class="text-gray-400 py-2">About</li>
+              <li class="text-gray-400 py-2">About 2</li>
+              <li class="text-gray-400 py-2">Contact</li>
+              <li class="text-gray-400 py-2">Contact 2</li>
+            </ul>
+          </div>
+          <div class="col-span-2 sm:col-span-1">
+            <ul class="text-gray">
+              <li class="text-gray-400 py-2">Blogs</li>
+              <li class="text-gray-400 py-2">All Product</li>
+              <li class="text-gray-400 py-2">Styleguide</li>
+              <li class="text-gray-400 py-2">License</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
